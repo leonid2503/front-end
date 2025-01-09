@@ -1,97 +1,44 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "sidebar main"
-        "sidebar footer";
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-}
-
 header {
-    grid-area: header;
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+  font-size: 1.5em;
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+  display: flex;
+  list-style: none;
+  gap: 10px;
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header .search {
-    display: flex;
-    gap: 5px;
-}
-
-.sidebar {
-    grid-area: sidebar;
-    background-color: #f4f4f4;
-    padding: 15px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-main {
-    grid-area: main;
-    padding: 15px;
-    display: flex;
-    gap: 15px;
+  color: white;
+  text-decoration: none;
 }
 
 .content {
-    flex: 3;
+  display: grid;
+  gap: 15px;
+  padding: 15px;
 }
 
 .content-block {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-.trends {
-    flex: 1;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
 }
 
 footer {
-    grid-area: footer;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
+
+/*# sourceMappingURL=layout1.css.map */

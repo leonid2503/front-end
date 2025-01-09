@@ -1,0 +1,82 @@
+@use "sass:color";
+
+$header-bg: #333;
+$header-color: white;
+
+header {
+    background-color: $header-bg;
+    color: $header-color;
+    text-align: center;
+    padding: 20px;
+
+    .logo h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .logo p {
+        margin: 5px 0 0;
+        color: color.adjust($header-color, $lightness: 20%);
+    }
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+    .card {
+        flex: 1;
+        background: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+
+    input {
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: $header-bg;
+        color: $header-color;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: color.adjust($header-bg, $lightness: 10%);
+        }
+    }
+}
+
+footer {
+    background-color: $header-bg;
+    color: $header-color;
+    text-align: center;
+    padding: 10px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+
+        li {
+            color: $header-color;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+$header-bg: #333;
+$header-text-color: white;
+
+header {
+    background-color: $header-bg;
+    color: $header-text-color;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+header nav ul li a {
+    color: $header-text-color;
+    text-decoration: none;
+}
+
+.content {
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+}
+
+.content-block {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: $header-bg;
+    color: $header-text-color;
+    text-align: center;
+    padding: 10px;
+}

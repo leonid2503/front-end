@@ -1,0 +1,17 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "front-end tasks for the uni",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass scss/:css/",
+    "build-stylus": "stylus stylus/ --out css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.1",
+    "stylus": "^0.64.0"
+  }
+}
